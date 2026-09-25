@@ -73,6 +73,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               <Link href="/privacy" className="hover:text-foreground">
                 Privacy policy
               </Link>
+              <Link href="/terms" className="hover:text-foreground">
+                Terms
+              </Link>
               <a href={GITHUB_URL} className="hover:text-foreground">
                 Source
               </a>
