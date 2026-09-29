@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import ArchitectureDiagram from "@/components/ArchitectureDiagram";
 import FeatureAnimation from "@/components/FeatureAnimation";
 import { GITHUB_URL } from "@/lib/site";
@@ -220,6 +221,14 @@ export default function Home() {
               <p className="mt-2 text-muted">{f.body}</p>
             </div>
           ))}
+        </div>
+        <div className="mt-10 text-center">
+          <Link
+            href="/features"
+            className="rounded-lg border border-border px-5 py-2.5 font-medium hover:bg-surface"
+          >
+            See the features in detail →
+          </Link>
         </div>
       </section>
 

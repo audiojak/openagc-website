@@ -50,6 +50,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               <Link href="/#try" className="hover:text-foreground">
                 Try it
               </Link>
+              <Link href="/features" className="hover:text-foreground">
+                Features
+              </Link>
               <Link href="/#how" className="hover:text-foreground max-sm:hidden">
                 How it works
               </Link>
