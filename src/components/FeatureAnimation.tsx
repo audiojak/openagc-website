@@ -14,7 +14,7 @@ import {
 
 const scenes = [
   { key: "tasks", label: "Email to tasks", steps: 5 },
-  { key: "agent", label: "Agents action tasks", steps: 6 },
+  { key: "agent", label: "Agents action tasks", steps: 8 },
   { key: "routines", label: "Mail routines", steps: 7 },
 ] as const;
 
@@ -139,9 +139,31 @@ function AgentScene({ step }: { step: number }) {
   const approved = step >= 4;
   return (
     <div className="grid items-start gap-4 md:grid-cols-2">
-      <Reveal step={step} at={0}>
-        <TaskCard done={step >= 5} />
-      </Reveal>
+      <div className="space-y-3">
+        <Reveal step={step} at={0}>
+          <TaskCard done={step >= 6} />
+        </Reveal>
+        {/* The dialog closes a beat after Mark Done. */}
+        <Reveal step={step >= 7 ? -1 : step} at={5}>
+          <div className="rounded-lg border border-border bg-background p-4 shadow-lg shadow-black/10">
+            <div className="font-semibold">Mark the Task Done?</div>
+            <p className="mt-1 text-sm text-muted">
+              You sent the reply for &ldquo;Send Emerson the revised onboarding
+              plan&rdquo;.
+            </p>
+            <div className="mt-3 flex justify-end gap-2 text-sm">
+              <span className="rounded bg-surface px-2.5 py-1">Keep Open</span>
+              <span
+                className={`rounded bg-accent px-2.5 py-1 text-white transition-transform duration-200 dark:text-background ${
+                  step >= 6 ? "scale-95 opacity-80" : ""
+                }`}
+              >
+                Mark Done
+              </span>
+            </div>
+          </div>
+        </Reveal>
+      </div>
       <div className="rounded-lg border border-border bg-background p-4">
         <div className="font-semibold">Claude</div>
         <Reveal step={step} at={1} className="mt-3">
@@ -332,7 +354,7 @@ export default function FeatureAnimation() {
           </button>
         ))}
       </div>
-      <div className="mt-5 min-h-[21rem] md:min-h-[15rem]" role="tabpanel" aria-live="polite">
+      <div className="mt-5 min-h-[40rem] md:min-h-[19rem]" role="tabpanel" aria-live="polite">
         {scene === 0 && <TasksScene step={shownStep} />}
         {scene === 1 && <AgentScene step={shownStep} />}
         {scene === 2 && <RoutinesScene step={shownStep} />}
