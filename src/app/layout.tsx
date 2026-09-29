@@ -26,10 +26,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "OpenAGC",
     description:
-      "The open-source, local-first Gmail client for macOS, built for personal AI agents.",
+      "The open-source, local-first Gmail client for macOS: turn email into tasks, let your AI agents work on them, and sort mail with routines.",
     url: SITE_URL,
     siteName: "OpenAGC",
-    images: ["/img/approval.png"],
+    images: ["/img/hero-tasks-agent.png"],
   },
 };
 
