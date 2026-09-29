@@ -1,4 +1,6 @@
 import Image from "next/image";
+import ArchitectureDiagram from "@/components/ArchitectureDiagram";
+import FeatureAnimation from "@/components/FeatureAnimation";
 import { GITHUB_URL } from "@/lib/site";
 
 const principles = [
@@ -117,8 +119,7 @@ export default function Home() {
         <p className="mx-auto mt-5 max-w-2xl text-lg text-muted text-balance">
           OpenAGC is a local-first, native macOS email client. Turn email into
           tasks, let Claude Code or Codex work through them, and sort your
-          inbox on a schedule — while sending and deleting always wait for
-          your approval.
+          inbox on a schedule.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <a
@@ -148,6 +149,18 @@ export default function Home() {
           Your tasks, the email behind each one, and Claude working on it.
           Nothing is sent until you approve.
         </p>
+      </section>
+
+      <section className="mx-auto max-w-5xl px-5 pb-24">
+        <h2 className="text-center text-2xl font-semibold tracking-tight">
+          From inbox to done, with an agent at your side
+        </h2>
+        <p className="mx-auto mt-3 max-w-2xl text-center text-muted">
+          Three things OpenAGC does that other mail clients don&apos;t.
+        </p>
+        <div className="mt-8">
+          <FeatureAnimation />
+        </div>
       </section>
 
       <section id="features" className="mx-auto max-w-5xl scroll-mt-8 space-y-24 px-5 pb-24">
@@ -240,19 +253,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="how" className="mx-auto max-w-5xl scroll-mt-8 px-5 py-20">
+      <section id="how" className="mx-auto max-w-6xl scroll-mt-8 px-5 py-20">
         <h2 className="text-2xl font-semibold tracking-tight">How it works</h2>
-        <p className="mt-3 max-w-2xl text-muted">
-          A fast SwiftUI and AppKit app over a Rust core. Your mailbox lives in
-          a local SQLite database with full local search, and a permission
-          engine in the app is the only way an agent reaches it.
+        <p className="mt-3 max-w-3xl text-muted">
+          OpenAGC is a native Mac app: SwiftUI and AppKit over a Rust core. Your
+          mail lives in a local database on your Mac, and the only way an agent
+          reaches it is through the app&apos;s own mail tools.
         </p>
-        <pre className="mt-6 overflow-x-auto rounded-lg border border-border bg-surface p-5 font-mono text-sm leading-relaxed">
-{`Gmail ──HTTPS/OAuth──▶ OpenAGC.app on your Mac
-                         ├── local mail database + search + tasks
-                         ├── permission engine (the only enforcement point)
-                         └── mail tools (MCP) ──▶ your claude / codex CLI`}
-        </pre>
+        <ArchitectureDiagram />
       </section>
 
       <section id="maintainers" className="mx-auto max-w-5xl scroll-mt-8 px-5 pb-20">
