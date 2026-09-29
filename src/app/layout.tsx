@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s · OpenAGC",
   },
   description:
-    "A local-first, native macOS Gmail client that lets Claude Code and Codex work on your mail — with sending and deleting always gated on your approval.",
+    "A local-first, native macOS Gmail client: turn email into tasks, let Claude Code or Codex work through them, and sort your inbox on a schedule.",
   openGraph: {
     title: "OpenAGC",
     description:
@@ -46,11 +46,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               <Image src="/img/icon.png" alt="" width={28} height={28} />
               OpenAGC
             </Link>
-            <div className="flex items-center gap-5 text-sm text-muted">
-              <Link href="/#how" className="hover:text-foreground">
+            <div className="flex items-center gap-5 whitespace-nowrap text-sm text-muted">
+              <Link href="/#try" className="hover:text-foreground">
+                Try it
+              </Link>
+              <Link href="/#how" className="hover:text-foreground max-sm:hidden">
                 How it works
               </Link>
-              <Link href="/privacy" className="hover:text-foreground">
+              <Link href="/privacy" className="hover:text-foreground max-sm:hidden">
                 Privacy
               </Link>
               <a href={GITHUB_URL} className="hover:text-foreground">
