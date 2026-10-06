@@ -6,7 +6,7 @@ import FeatureAnimation from "@/components/FeatureAnimation";
 export const metadata: Metadata = {
   title: "Features",
   description:
-    "Turn email into tasks, let Claude Code or Codex action them, and sort mail with routines that run on your Mac or in Claude's cloud.",
+    "Turn email into tasks, let Claude Code or Codex action them in a writing style learned from your own mail, and sort mail with routines.",
 };
 
 const buckets = [
@@ -90,7 +90,7 @@ export default function Features() {
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-lg text-muted text-balance">
           OpenAGC turns email into tasks, lets your own AI agent work through
-          them, and keeps automated mail out of your way.
+          them in your own voice, and keeps automated mail out of your way.
         </p>
       </section>
 
@@ -174,6 +174,82 @@ export default function Features() {
             </p>
           </div>
           <RoutineIllustration />
+        </div>
+
+        <div className="grid items-center gap-10 md:grid-cols-2">
+          <div className="md:order-2">
+            <div className="font-mono text-sm text-accent">04</div>
+            <h2 className="mt-1 text-2xl font-semibold tracking-tight">
+              A writing guide learned from your own sent mail
+            </h2>
+            <p className="mt-3 text-muted">
+              Choose how many of your recent sent messages to learn from. Your
+              own agent reads them in a read-only session and proposes how you
+              write — your voice, how you open and sign off, spelling, favourite
+              phrases, how you treat different people — each with quotes from
+              your mail as evidence. You accept, edit or reject every entry,
+              and a short interview covers what mail can&apos;t show, like
+              confidentiality and what to do when unsure.
+            </p>
+            <p className="mt-3 text-muted">
+              Every AI that writes for you then follows the guide: writing help
+              in the composer, the agent column and routines, with Claude Code
+              or Codex. Drafts say who they&apos;re written for, rules are
+              checked before you see a draft, and the agent asks rather than
+              inventing a fact it doesn&apos;t have.
+            </p>
+          </div>
+          <div className="space-y-4 md:order-1">
+            <Shot
+              src="/img/writing-help.png"
+              alt="The composer with a reply to Emerson Silva, showing the original message above the editor and a bar that reads: Ask Claude to write or change this message"
+              width={760}
+              height={760}
+            />
+            <div className="mx-auto w-fit overflow-hidden rounded-lg border border-border bg-white shadow-lg shadow-black/10">
+              <Image
+                src="/img/guide-ready.png"
+                alt="A sheet: Your Writing Guide Is Ready to Review. The analysis of your sent mail finished; 12 decisions are waiting for you. Buttons: Later, Review Now."
+                width={460}
+                height={143}
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="grid items-center gap-10 md:grid-cols-2">
+          <div>
+            <div className="font-mono text-sm text-accent">05</div>
+            <h2 className="mt-1 text-2xl font-semibold tracking-tight">
+              Analysis: it keeps learning from your edits
+            </h2>
+            <p className="mt-3 text-muted">
+              Once a day, OpenAGC compares what the AI drafted with what you
+              actually sent. Where your edits show the guide is wrong or
+              missing something, it proposes a change, with the two versions
+              side by side and the differing words marked. A pattern needs to
+              show up in two or three messages before it&apos;s proposed;
+              weaker ones wait under Watching. Nothing changes until you
+              accept, and every change can be undone.
+            </p>
+            <p className="mt-3 text-muted">
+              Analysis also keeps your <strong className="text-foreground">facts</strong>:
+              your name, time zone, calendar link, role, the people you
+              mention. Each is marked use freely, ask before using, or never
+              share, and can be kept to one account or shared across all of
+              them. New facts found in your sent mail arrive as proposals too.
+              Passwords, card numbers, government IDs and other people&apos;s
+              health details are never stored.
+            </p>
+          </div>
+          <div className="mx-auto w-full max-w-sm">
+            <Shot
+              src="/img/analysis-proposals.png"
+              alt="The Analysis list with three proposals waiting: one decision from learning, a change to keep replies to two or three short sentences seen in 2 messages, a new guideline to sign off with just J seen in 3 messages, and one pattern collecting evidence under Watching"
+              width={380}
+              height={470}
+            />
+          </div>
         </div>
       </section>
 
