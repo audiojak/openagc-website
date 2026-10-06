@@ -90,7 +90,8 @@ export default function Features() {
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-lg text-muted text-balance">
           OpenAGC turns email into tasks, lets your own AI agent work through
-          them in your own voice, and keeps automated mail out of your way.
+          them in your own voice, keeps automated mail out of your way, and
+          can give an agent an address of its own.
         </p>
       </section>
 
@@ -221,34 +222,84 @@ export default function Features() {
           <div>
             <div className="font-mono text-sm text-accent">05</div>
             <h2 className="mt-1 text-2xl font-semibold tracking-tight">
-              Analysis: it keeps learning from your edits
+              It keeps learning from your edits
             </h2>
             <p className="mt-3 text-muted">
               Once a day, OpenAGC compares what the AI drafted with what you
               actually sent. Where your edits show the guide is wrong or
-              missing something, it proposes a change, with the two versions
-              side by side and the differing words marked. A pattern needs to
-              show up in two or three messages before it&apos;s proposed;
-              weaker ones wait under Watching. Nothing changes until you
-              accept, and every change can be undone.
+              missing something, it proposes a rule change, with the two
+              versions side by side and the differing words marked. A pattern
+              needs to show up in two or three messages before it&apos;s
+              proposed. The Writing Guide&apos;s header says how many rules
+              are waiting; you review them as cards, accept, edit or reject
+              each one, and every decision can be undone.
             </p>
             <p className="mt-3 text-muted">
-              Analysis also keeps your <strong className="text-foreground">facts</strong>:
-              your name, time zone, calendar link, role, the people you
-              mention. Each is marked use freely, ask before using, or never
-              share, and can be kept to one account or shared across all of
-              them. New facts found in your sent mail arrive as proposals too.
-              Passwords, card numbers, government IDs and other people&apos;s
-              health details are never stored.
+              A <strong className="text-foreground">Facts</strong> page keeps
+              what agents may say about you: your name, time zone, calendar
+              link, role, the people you mention. Each fact is marked use
+              freely, ask before using, or never share, and can be kept to one
+              account or shared across all of them. New facts found in your
+              sent mail arrive as proposals too. Passwords, card numbers,
+              government IDs and other people&apos;s health details are never
+              stored.
             </p>
           </div>
           <div className="mx-auto w-full max-w-sm">
             <Shot
-              src="/img/analysis-proposals.png"
-              alt="The Analysis list with three proposals waiting: one decision from learning, a change to keep replies to two or three short sentences seen in 2 messages, a new guideline to sign off with just J seen in 3 messages, and one pattern collecting evidence under Watching"
+              src="/img/guide-review.png"
+              alt="The Writing Guide's list column: Learn from Sent Mail, the daily review's status with Run Now, a Review 3 Proposed Rules button, and the categories Voice and tone, Structure and Language, each row saying nothing yet"
               width={380}
-              height={470}
+              height={730}
             />
+          </div>
+        </div>
+
+        <div className="grid items-center gap-10 md:grid-cols-2">
+          <div className="md:order-2">
+            <div className="font-mono text-sm text-accent">06</div>
+            <h2 className="mt-1 text-2xl font-semibold tracking-tight">
+              An email address of its own for your agent
+            </h2>
+            <p className="mt-3 text-muted">
+              Give an agent its own mailbox, so it can sign up for services and
+              write to people as itself rather than as you. Name the agent,
+              agree to the mail service&apos;s terms, and the address is
+              created and open in a few seconds, with no agent involved in the
+              setup. Verify it with your own email to raise its sending limits,
+              or put it on a domain you own: the app lists the DNS records to
+              add and checks for them.
+            </p>
+            <p className="mt-3 text-muted">
+              An agent mailbox is a full account: its own writing guide, facts,
+              routines and undo. You read its mail and can send as the agent.
+              Per mailbox you choose whether agents send freely (each message
+              is checked against the mailbox&apos;s guide and logged) or ask
+              before each send, as on your own accounts. Deleting mail always
+              asks. The first service supported is{" "}
+              <a href="https://primitive.dev" className="underline hover:text-foreground">
+                Primitive
+              </a>
+              , free to start; its mailboxes send to one recipient at a time.
+            </p>
+          </div>
+          <div className="space-y-4 md:order-1">
+            <div className="mx-auto w-full max-w-sm">
+              <Shot
+                src="/img/agent-mailbox-inbox.png"
+                alt="An agent mailbox's inbox with two messages, a banner saying that until it is verified the mailbox can only reply to people who wrote first, up to 10 an hour and 50 a day, and a Verify button"
+                width={380}
+                height={420}
+              />
+            </div>
+            <div className="mx-auto w-fit overflow-hidden rounded-lg border border-border bg-white shadow-lg shadow-black/10">
+              <Image
+                src="/img/agent-mailbox-create.png"
+                alt="The Create an Agent Mailbox sheet: a name field reading Research Scout, the Primitive service described as free, a note that creating it accepts Primitive's Terms of Service, and Cancel and Agree and Create buttons"
+                width={460}
+                height={290}
+              />
+            </div>
           </div>
         </div>
       </section>
