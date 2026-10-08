@@ -90,8 +90,8 @@ export default function Features() {
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-lg text-muted text-balance">
           OpenAGC turns email into tasks, lets your own AI agent work through
-          them in your own voice, keeps automated mail out of your way, and
-          can give an agent an address of its own.
+          them in your own voice, keeps automated mail out of your way, gives
+          an agent an address of its own, and clears years of mail in one go.
         </p>
       </section>
 
@@ -263,24 +263,30 @@ export default function Features() {
             </h2>
             <p className="mt-3 text-muted">
               Give an agent its own mailbox, so it can sign up for services and
-              write to people as itself rather than as you. Name the agent,
-              agree to the mail service&apos;s terms, and the address is
-              created and open in a few seconds, with no agent involved in the
-              setup. Verify it with your own email to raise its sending limits,
-              or put it on a domain you own: the app lists the DNS records to
-              add and checks for them.
+              write to people as itself rather than as you. Pick a service,
+              name the agent, agree to the service&apos;s terms, and the
+              address is created and open in a few seconds, with no agent
+              involved in the setup. Verify it with your own email to raise its
+              sending limits. Once you have one, adding another agent is just a
+              name: they share the service account, its key and its
+              verification, and on Primitive you can put them on a domain you
+              own, with the DNS records listed and checked by the app.
             </p>
             <p className="mt-3 text-muted">
-              An agent mailbox is a full account: its own writing guide, facts,
-              routines and undo. You read its mail and can send as the agent.
-              Per mailbox you choose whether agents send freely (each message
-              is checked against the mailbox&apos;s guide and logged) or ask
-              before each send, as on your own accounts. Deleting mail always
-              asks. The first service supported is{" "}
+              Each agent mailbox is a full account: its own writing guide,
+              facts, routines and undo. You read its mail and can send as the
+              agent. Per mailbox you choose whether agents send freely (each
+              message is checked against the mailbox&apos;s guide and logged)
+              or ask before each send, as on your own accounts. Deleting mail
+              always asks. Two services are supported, both free to start:{" "}
               <a href="https://primitive.dev" className="underline hover:text-foreground">
                 Primitive
+              </a>{" "}
+              and{" "}
+              <a href="https://agentmail.to" className="underline hover:text-foreground">
+                AgentMail
               </a>
-              , free to start; its mailboxes send to one recipient at a time.
+              ; the app states each one&apos;s limits in its own words.
             </p>
           </div>
           <div className="space-y-4 md:order-1">
@@ -295,10 +301,63 @@ export default function Features() {
             <div className="mx-auto w-fit overflow-hidden rounded-lg border border-border bg-white shadow-lg shadow-black/10">
               <Image
                 src="/img/agent-mailbox-create.png"
-                alt="The Create an Agent Mailbox sheet: a name field reading Research Scout, the Primitive service described as free, a note that creating it accepts Primitive's Terms of Service, and Cancel and Agree and Create buttons"
+                alt="The Create an Agent Mailbox sheet asking where the mailbox lives: Primitive, addresses for agents on a shared domain, or AgentMail, inboxes for agents at agentmail.to, each with a line on its free tier"
                 width={460}
-                height={290}
+                height={287}
               />
+            </div>
+          </div>
+        </div>
+
+        <div className="grid items-center gap-10 md:grid-cols-2">
+          <div>
+            <div className="font-mono text-sm text-accent">07</div>
+            <h2 className="mt-1 text-2xl font-semibold tracking-tight">
+              Clean Up: clear years of mail in one go
+            </h2>
+            <p className="mt-3 text-muted">
+              A window for the once-a-year tidy rather than the daily one. It
+              groups a whole mailbox by sender, by people you&apos;ve written
+              to, by subject, mailing list, time, size, or Gmail&apos;s Social
+              and Promotions categories. Tick the groups you&apos;re done with
+              and archive, move, trash or mark as spam every message in them,
+              thousands at a time, with one Undo to bring them all back. It
+              acts on messages, not threads, so a person&apos;s reply in a
+              mixed thread stays where it is.
+            </p>
+            <p className="mt-3 text-muted">
+              The Mailing Lists view can unsubscribe you: one request to the
+              list&apos;s own site after a confirmation naming each list, or a
+              filled-in message in the composer for you to send, never behind
+              your back and never by an agent. A card at the foot tracks your
+              progress towards Inbox Zero, with today&apos;s numbers and a
+              month&apos;s trend.
+            </p>
+          </div>
+          <div className="space-y-4">
+            <Shot
+              src="/img/cleanup.png"
+              alt="The Clean Up window on the Sender view: senders listed with message counts, Weekly Digest ticked with 55 messages, and its messages listed on the right under toolbar buttons for archive, trash, spam and move"
+              width={1180}
+              height={760}
+            />
+            <div className="flex flex-wrap items-start justify-center gap-4">
+              <div className="w-fit overflow-hidden rounded-lg border border-border bg-white shadow-lg shadow-black/10">
+                <Image
+                  src="/img/cleanup-unsubscribe.png"
+                  alt="A confirmation: Unsubscribe from Weekly Digest? OpenAGC asks weekly-digest.example.org once to take you off the list; nothing else is sent. An Archive Them Too checkbox, and Cancel and Unsubscribe buttons."
+                  width={460}
+                  height={210}
+                />
+              </div>
+              <div className="w-fit overflow-hidden rounded-lg border border-border bg-white shadow-lg shadow-black/10">
+                <Image
+                  src="/img/cleanup-card.png"
+                  alt="The Inbox Zero card: 63 percent, a falling sparkline, and today's numbers: At Midnight 940, Received Today 0, Removed Today minus 41, Now 899"
+                  width={210}
+                  height={300}
+                />
+              </div>
             </div>
           </div>
         </div>
