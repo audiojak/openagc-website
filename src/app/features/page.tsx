@@ -355,7 +355,7 @@ export default function Features() {
                   src="/img/cleanup-card.png"
                   alt="The Inbox Zero card: 63 percent, a falling sparkline, and today's numbers: At Midnight 940, Received Today 0, Removed Today minus 41, Now 899"
                   width={210}
-                  height={300}
+                  height={190}
                 />
               </div>
             </div>
