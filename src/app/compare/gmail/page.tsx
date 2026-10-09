@@ -149,6 +149,7 @@ const c: Comparison = {
     "Routines that sort automated mail every hour, locally or in Claude's cloud, and a Clean Up window for the big tidy.",
     "Open source and local-first: your mail is kept on your Mac, and there is no server, account or telemetry in between you and Google.",
   ],
+  titleJoin: "with",
   verdictTitle: "Use both",
   chooseLabels: { them: "Keep Gmail for", us: "Open OpenAGC for" },
   choose: {

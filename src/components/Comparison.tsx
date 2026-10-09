@@ -21,6 +21,8 @@ export type Comparison = {
   choose: { them: string; us: string };
   /** Overrides for products used alongside OpenAGC rather than instead of it. */
   verdictTitle?: string;
+  /** The word between the names in the heading; "vs" unless set. */
+  titleJoin?: string;
   chooseLabels?: { them: string; us: string };
   sources: { label: string; url: string }[];
 };
@@ -50,7 +52,7 @@ export default function ComparisonPage({ c }: { c: Comparison }) {
     <>
       <section className="mx-auto max-w-5xl px-5 pt-16 pb-10">
         <h1 className="text-4xl font-semibold tracking-tight text-balance">
-          OpenAGC vs {c.name}
+          OpenAGC {c.titleJoin ?? "vs"} {c.name}
         </h1>
         <p className="mt-4 max-w-3xl text-lg text-muted">{c.tagline}</p>
         <p className="mt-4 max-w-3xl text-muted">{c.intro}</p>
