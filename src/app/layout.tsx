@@ -75,12 +75,18 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               </a>
               .
             </p>
-            <div className="flex gap-5">
+            <div className="flex flex-wrap gap-x-5 gap-y-2">
               <Link href="/privacy" className="hover:text-foreground">
                 Privacy policy
               </Link>
               <Link href="/terms" className="hover:text-foreground">
                 Terms
+              </Link>
+              <Link href="/compare/mailstrom" className="hover:text-foreground">
+                vs Mailstrom
+              </Link>
+              <Link href="/compare/superhuman" className="hover:text-foreground">
+                vs Superhuman
               </Link>
               <a href={GITHUB_URL} className="hover:text-foreground">
                 Source

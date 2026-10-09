@@ -378,6 +378,16 @@ export default function Features() {
           >
             Try it on your Mac
           </Link>
+          <p className="mt-6 text-sm text-muted">
+            How it compares:{" "}
+            <Link href="/compare/superhuman" className="underline hover:text-foreground">
+              OpenAGC vs Superhuman
+            </Link>{" "}
+            ·{" "}
+            <Link href="/compare/mailstrom" className="underline hover:text-foreground">
+              OpenAGC vs Mailstrom
+            </Link>
+          </p>
         </div>
       </section>
     </>
