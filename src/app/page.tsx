@@ -42,7 +42,7 @@ const trySteps = [
   {
     title: "Get the code and the tools",
     code: `git clone ${GITHUB_URL}
-cd openagc
+cd kaluta
 ./scripts/bootstrap.sh`,
     note: "Installs Rust and XcodeGen with Homebrew, and checks for Xcode.",
   },

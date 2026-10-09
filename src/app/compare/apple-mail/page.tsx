@@ -149,7 +149,7 @@ const c: Comparison = {
     { label: "Mail User Guide for Mac", url: "https://support.apple.com/guide/mail/welcome/mac" },
     { label: "Apple Intelligence (Apple)", url: "https://www.apple.com/apple-intelligence/" },
     { label: "Use Apple Intelligence in Mail on Mac (Mac User Guide)", url: "https://support.apple.com/guide/mac-help/mchlb2dbea8f/mac" },
-    { label: "Kaluta specification", url: "https://github.com/audiojak/openagc/blob/main/docs/SPECIFICATION.md" },
+    { label: "Kaluta specification", url: "https://github.com/audiojak/kaluta/blob/main/docs/SPECIFICATION.md" },
   ],
 };
 

@@ -1,6 +1,6 @@
 # kaluta-website
 
-The website for [Kaluta](https://github.com/audiojak/openagc), served at
+The website for [Kaluta](https://github.com/audiojak/kaluta), served at
 **https://kaluta.org** on Vercel.
 
 Next.js (App Router) + Tailwind CSS. Every page is static.

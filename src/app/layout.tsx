@@ -44,10 +44,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <nav className="mx-auto flex max-w-5xl items-center justify-between px-5 py-4">
             <Link href="/" className="flex items-center gap-2.5 font-semibold">
               <Image
-                src="/img/kaluta-mark.png"
+                src="/img/kaluta-mark.svg"
                 alt=""
-                width={28}
-                height={28}
+                width={34}
+                height={25}
+                unoptimized
                 className="dark:invert"
               />
               Kaluta

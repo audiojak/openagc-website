@@ -15,11 +15,12 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 The product is **Kaluta** (kaluta.org), named after a small Australian
 marsupial; the logo is one, in black ink (`public/img/kaluta-mark.png`,
 the tiled app icon in `public/img/icon.png`). It was called **OpenAGC**
-until October 2026. Write "Kaluta" everywhere on the site; the only old
-names that stay are the GitHub URL in `src/lib/site.ts` and the
-`cd openagc` clone step on the home page, until the maintainer renames
-the repo to `audiojak/kaluta` (then update both), and the app checkout
-path `../OpenAGC`, which keeps its name. `next.config.ts` redirects the
+until October 2026. Write "Kaluta" everywhere on the site. The app repo is
+`audiojak/kaluta`; its local checkout path, `../OpenAGC`, keeps its old
+name. The icons come from that repo: `public/img/icon.png` and the
+favicons are its app icon (`macos/Kaluta/Resources/Assets.xcassets/
+AppIcon.appiconset`), and the header mark is `brand/Kaluta-mark.svg`;
+copy them again when the app's change. `next.config.ts` redirects the
 old host, openagc.actual.ai, to kaluta.org.
 
 This is the marketing site for Kaluta (the app lives in `../OpenAGC`),

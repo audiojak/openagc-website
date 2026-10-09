@@ -167,7 +167,7 @@ const c: Comparison = {
     { label: "Superhuman Mail MCP Server (help centre)", url: "https://help.superhuman.com/hc/en-us/articles/49810745762067" },
     { label: "Superhuman AI overview (data handling)", url: "https://help.superhuman.com/hc/en-us/articles/38456908110227" },
     { label: "Download Superhuman Mail (platforms)", url: "https://help.superhuman.com/hc/en-us/articles/38456031956243" },
-    { label: "Kaluta specification", url: "https://github.com/audiojak/openagc/blob/main/docs/SPECIFICATION.md" },
+    { label: "Kaluta specification", url: "https://github.com/audiojak/kaluta/blob/main/docs/SPECIFICATION.md" },
   ],
 };
 

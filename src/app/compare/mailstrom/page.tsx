@@ -133,7 +133,7 @@ const c: Comparison = {
     { label: "Mailstrom pricing", url: "https://mailstrom.co/pricing" },
     { label: "Mailstrom FAQ (IMAP, data stored, Block, Chill, Expire, trial)", url: "https://mailstrom.co/faq" },
     { label: "Mailstrom privacy policy", url: "https://mailstrom.co/privacy" },
-    { label: "Kaluta specification (Clean Up, §14.12)", url: "https://github.com/audiojak/openagc/blob/main/docs/SPECIFICATION.md" },
+    { label: "Kaluta specification (Clean Up, §14.12)", url: "https://github.com/audiojak/kaluta/blob/main/docs/SPECIFICATION.md" },
   ],
 };
 

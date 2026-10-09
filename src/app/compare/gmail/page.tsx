@@ -160,7 +160,7 @@ const c: Comparison = {
     { label: "Gemini in Gmail (Google support)", url: "https://support.google.com/mail/answer/14199860" },
     { label: "Google AI plans and pricing", url: "https://one.google.com/about/google-ai-plans/" },
     { label: "How to use Gemini in Gmail (Google blog)", url: "https://blog.google/products/gmail/how-to-use-gemini-gmail-app/" },
-    { label: "Kaluta specification (Gmail integration, §7)", url: "https://github.com/audiojak/openagc/blob/main/docs/SPECIFICATION.md" },
+    { label: "Kaluta specification (Gmail integration, §7)", url: "https://github.com/audiojak/kaluta/blob/main/docs/SPECIFICATION.md" },
   ],
 };
 
