@@ -19,7 +19,7 @@ export type Comparison = {
   theirStrengths: string[];
   ourStrengths: string[];
   choose: { them: string; us: string };
-  /** Overrides for products used alongside OpenAGC rather than instead of it. */
+  /** Overrides for products used alongside Kaluta rather than instead of it. */
   verdictTitle?: string;
   /** The word between the names in the heading; "vs" unless set. */
   titleJoin?: string;
@@ -52,12 +52,12 @@ export default function ComparisonPage({ c }: { c: Comparison }) {
     <>
       <section className="mx-auto max-w-5xl px-5 pt-16 pb-10">
         <h1 className="text-4xl font-semibold tracking-tight text-balance">
-          OpenAGC {c.titleJoin ?? "vs"} {c.name}
+          Kaluta {c.titleJoin ?? "vs"} {c.name}
         </h1>
         <p className="mt-4 max-w-3xl text-lg text-muted">{c.tagline}</p>
         <p className="mt-4 max-w-3xl text-muted">{c.intro}</p>
         <p className="mt-4 text-sm text-muted">
-          Checked against {c.name}&apos;s own site on {c.checked}. OpenAGC is
+          Checked against {c.name}&apos;s own site on {c.checked}. Kaluta is
           pre-alpha and built from source; see{" "}
           <Link href="/#try" className="underline hover:text-foreground">
             how to try it
@@ -79,7 +79,7 @@ export default function ComparisonPage({ c }: { c: Comparison }) {
                   &nbsp;
                 </th>
                 <th scope="col" className="w-[37.5%] px-3 py-3 font-semibold">
-                  OpenAGC
+                  Kaluta
                 </th>
                 <th scope="col" className="w-[37.5%] px-3 py-3 font-semibold">
                   {c.name}
@@ -116,7 +116,7 @@ export default function ComparisonPage({ c }: { c: Comparison }) {
           </ul>
         </div>
         <div>
-          <h2 className="text-xl font-semibold">Where OpenAGC is stronger</h2>
+          <h2 className="text-xl font-semibold">Where Kaluta is stronger</h2>
           <ul className="mt-3 list-disc space-y-2 pl-5 text-muted">
             {c.ourStrengths.map((s) => (
               <li key={s}>{s}</li>
@@ -133,7 +133,7 @@ export default function ComparisonPage({ c }: { c: Comparison }) {
             {c.choose.them}
           </p>
           <p className="mt-3 text-muted">
-            <strong className="text-foreground">{c.chooseLabels?.us ?? "Choose OpenAGC"}</strong>{" "}
+            <strong className="text-foreground">{c.chooseLabels?.us ?? "Choose Kaluta"}</strong>{" "}
             {c.choose.us}
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
@@ -141,13 +141,13 @@ export default function ComparisonPage({ c }: { c: Comparison }) {
               href="/#try"
               className="rounded-lg bg-accent px-5 py-2.5 font-medium text-white hover:opacity-90 dark:text-background"
             >
-              Try OpenAGC on your Mac
+              Try Kaluta on your Mac
             </Link>
             <Link
               href="/features"
               className="rounded-lg border border-border bg-background px-5 py-2.5 font-medium hover:bg-surface"
             >
-              All OpenAGC features
+              All Kaluta features
             </Link>
           </div>
         </div>
@@ -165,7 +165,7 @@ export default function ComparisonPage({ c }: { c: Comparison }) {
           ))}
         </ul>
         <p className="mt-4">
-          {c.name} is a trademark of its owner. OpenAGC is not affiliated with
+          {c.name} is a trademark of its owner. Kaluta is not affiliated with
           it. Prices and features are as published by {c.name} on the date
           above and may have changed.
         </p>

@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import ComparisonPage, { type Comparison } from "@/components/Comparison";
 
 export const metadata: Metadata = {
-  title: "OpenAGC vs Apple Mail",
+  title: "Kaluta vs Apple Mail",
   description:
-    "How OpenAGC compares with the Mail app on macOS: accounts, Apple Intelligence, agents, tasks, clean-up and privacy.",
+    "How Kaluta compares with the Mail app on macOS: accounts, Apple Intelligence, agents, tasks, clean-up and privacy.",
 };
 
 const c: Comparison = {
   name: "Apple Mail",
   url: "https://support.apple.com/guide/mail/welcome/mac",
   tagline:
-    "Both are native Mac mail clients that keep your mail on your machine. Apple Mail is built in, works with any account and has Apple Intelligence; OpenAGC is Gmail-only, open source, and built to put your own AI agents to work.",
+    "Both are native Mac mail clients that keep your mail on your machine. Apple Mail is built in, works with any account and has Apple Intelligence; Kaluta is Gmail-only, open source, and built to put your own AI agents to work.",
   intro:
-    "Apple Mail is the client most Mac users already have: free, fast, any account type, and since macOS 26 with categories, priority messages, summaries and Smart Reply from Apple Intelligence, processed on the Mac or in Apple's Private Cloud Compute. OpenAGC is narrower and goes further in one direction. It speaks only Gmail, but it lets Claude Code or Codex work on your mail through approved tools, turns email into tasks, learns how you write from your sent mail, runs routines that sort mail every hour, and can give an agent an address of its own.",
+    "Apple Mail is the client most Mac users already have: free, fast, any account type, and since macOS 26 with categories, priority messages, summaries and Smart Reply from Apple Intelligence, processed on the Mac or in Apple's Private Cloud Compute. Kaluta is narrower and goes further in one direction. It speaks only Gmail, but it lets Claude Code or Codex work on your mail through approved tools, turns email into tasks, learns how you write from your sent mail, runs routines that sort mail every hour, and can give an agent an address of its own.",
   checked: "8 October 2026",
   rows: [
     {
@@ -149,7 +149,7 @@ const c: Comparison = {
     { label: "Mail User Guide for Mac", url: "https://support.apple.com/guide/mail/welcome/mac" },
     { label: "Apple Intelligence (Apple)", url: "https://www.apple.com/apple-intelligence/" },
     { label: "Use Apple Intelligence in Mail on Mac (Mac User Guide)", url: "https://support.apple.com/guide/mac-help/mchlb2dbea8f/mac" },
-    { label: "OpenAGC specification", url: "https://github.com/audiojak/openagc/blob/main/docs/SPECIFICATION.md" },
+    { label: "Kaluta specification", url: "https://github.com/audiojak/openagc/blob/main/docs/SPECIFICATION.md" },
   ],
 };
 

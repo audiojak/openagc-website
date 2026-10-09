@@ -3,7 +3,7 @@ import { GITHUB_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy policy",
-  description: "How OpenAGC handles your Google account data and your email.",
+  description: "How Kaluta handles your Google account data and your email.",
 };
 
 const LAST_UPDATED = "September 25, 2026";
@@ -15,7 +15,7 @@ export default function Privacy() {
       <p>Last updated {LAST_UPDATED}</p>
 
       <p>
-        OpenAGC is an open-source macOS email client. It runs entirely on your
+        Kaluta is an open-source macOS email client. It runs entirely on your
         Mac. This policy explains what data the app accesses, where that data
         goes, and what it is used for.
       </p>
@@ -24,9 +24,9 @@ export default function Privacy() {
       <ul>
         <li>
           Your email is stored only on your Mac. It never passes through servers
-          operated by OpenAGC or Actual AI — the project operates none.
+          operated by Kaluta or Actual AI — the project operates none.
         </li>
-        <li>OpenAGC has no user accounts and collects no telemetry or analytics.</li>
+        <li>Kaluta has no user accounts and collects no telemetry or analytics.</li>
         <li>
           Your mail is shared with an AI agent only when you connect one, and
           only through the tools you allow.
@@ -35,7 +35,7 @@ export default function Privacy() {
 
       <h2>Data the app accesses</h2>
       <p>
-        When you sign in with Google, OpenAGC requests the{" "}
+        When you sign in with Google, Kaluta requests the{" "}
         <code>gmail.modify</code> scope, to read, organise and send your mail,
         and the <code>userinfo.email</code> scope, to identify which account is
         signed in. It never requests full mailbox access (
@@ -57,8 +57,8 @@ export default function Privacy() {
           Google sign-in tokens are stored in the macOS Keychain.
         </li>
         <li>
-          Signing out of an account in OpenAGC deletes its sign-in tokens and its local mail database. You
-          can also revoke OpenAGC&apos;s access at any time at{" "}
+          Signing out of an account in Kaluta deletes its sign-in tokens and its local mail database. You
+          can also revoke Kaluta&apos;s access at any time at{" "}
           <a href="https://myaccount.google.com/permissions">
             myaccount.google.com/permissions
           </a>
@@ -68,14 +68,14 @@ export default function Privacy() {
 
       <h2>AI agents</h2>
       <p>
-        OpenAGC can connect to AI agent tools already installed on your Mac,
+        Kaluta can connect to AI agent tools already installed on your Mac,
         such as Claude Code or Codex, using your own login with those providers.
-        OpenAGC never sees your AI provider credentials.
+        Kaluta never sees your AI provider credentials.
       </p>
       <p>
         When you ask an agent to work on your mail, the agent can use a limited
         set of mail tools. The content it reads through those tools is sent to
-        your AI provider under your agreement with them — OpenAGC does not
+        your AI provider under your agreement with them — Kaluta does not
         control how that provider handles it. Every access is recorded in a
         local log you can review. Sending, forwarding and deleting always require
         your approval in the app.
@@ -88,20 +88,20 @@ export default function Privacy() {
 
       <h2>Google API Services User Data Policy</h2>
       <p>
-        OpenAGC&apos;s use and transfer of information received from Google APIs
+        Kaluta&apos;s use and transfer of information received from Google APIs
         adheres to the{" "}
         <a href="https://developers.google.com/terms/api-services-user-data-policy">
           Google API Services User Data Policy
         </a>
         , including the Limited Use requirements. Google user data is used only
         to provide the email features you use in the app. It is not sold, not
-        used for advertising, and not used to train AI models by OpenAGC or
+        used for advertising, and not used to train AI models by Kaluta or
         Actual AI.
       </p>
 
       <h2>Who is responsible</h2>
       <p>
-        OpenAGC is an independent open-source project sponsored by Actual AI,
+        Kaluta is an independent open-source project sponsored by Actual AI,
         which is the developer named on the signed app and on Google&apos;s
         OAuth consent screen. Because the app has no backend, neither the
         project nor Actual AI holds any of your email or account data.

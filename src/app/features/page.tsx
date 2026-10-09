@@ -89,7 +89,7 @@ export default function Features() {
           From inbox to done, with an agent at your side
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-lg text-muted text-balance">
-          OpenAGC turns email into tasks, lets your own AI agent work through
+          Kaluta turns email into tasks, lets your own AI agent work through
           them in your own voice, keeps automated mail out of your way, gives
           an agent an address of its own, and clears years of mail in one go.
         </p>
@@ -142,7 +142,7 @@ export default function Features() {
             </p>
             <p className="mt-3 text-muted">
               You review the proposal and approve or reject it. Reply from a
-              task yourself and OpenAGC offers to mark it done once it&apos;s
+              task yourself and Kaluta offers to mark it done once it&apos;s
               sent.
             </p>
           </div>
@@ -225,7 +225,7 @@ export default function Features() {
               It keeps learning from your edits
             </h2>
             <p className="mt-3 text-muted">
-              Once a day, OpenAGC compares what the AI drafted with what you
+              Once a day, Kaluta compares what the AI drafted with what you
               actually sent. Where your edits show the guide is wrong or
               missing something, it proposes a rule change, with the two
               versions side by side and the differing words marked. A pattern
@@ -345,7 +345,7 @@ export default function Features() {
               <div className="w-fit overflow-hidden rounded-lg border border-border bg-white shadow-lg shadow-black/10">
                 <Image
                   src="/img/cleanup-unsubscribe.png"
-                  alt="A confirmation: Unsubscribe from Weekly Digest? OpenAGC asks weekly-digest.example.org once to take you off the list; nothing else is sent. An Archive Them Too checkbox, and Cancel and Unsubscribe buttons."
+                  alt="A confirmation: Unsubscribe from Weekly Digest? Kaluta asks weekly-digest.example.org once to take you off the list; nothing else is sent. An Archive Them Too checkbox, and Cancel and Unsubscribe buttons."
                   width={460}
                   height={210}
                 />
@@ -369,7 +369,7 @@ export default function Features() {
             Try it with a demo mailbox
           </h2>
           <p className="mx-auto mt-3 max-w-2xl text-muted">
-            Build OpenAGC from source and explore all of this with made-up
+            Build Kaluta from source and explore all of this with made-up
             mail, without connecting an account.
           </p>
           <Link
@@ -381,19 +381,19 @@ export default function Features() {
           <p className="mt-6 text-sm text-muted">
             How it compares:{" "}
             <Link href="/compare/superhuman" className="underline hover:text-foreground">
-              OpenAGC vs Superhuman
+              Kaluta vs Superhuman
             </Link>{" "}
             ·{" "}
             <Link href="/compare/mailstrom" className="underline hover:text-foreground">
-              OpenAGC vs Mailstrom
+              Kaluta vs Mailstrom
             </Link>{" "}
             ·{" "}
             <Link href="/compare/apple-mail" className="underline hover:text-foreground">
-              OpenAGC vs Apple Mail
+              Kaluta vs Apple Mail
             </Link>{" "}
             ·{" "}
             <Link href="/compare/gmail" className="underline hover:text-foreground">
-              OpenAGC with Gmail
+              Kaluta with Gmail
             </Link>
           </p>
         </div>

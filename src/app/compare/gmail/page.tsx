@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import ComparisonPage, { type Comparison } from "@/components/Comparison";
 
 export const metadata: Metadata = {
-  title: "OpenAGC with Gmail",
+  title: "Kaluta with Gmail",
   description:
-    "OpenAGC is a Gmail client, not a Gmail replacement. How it fits alongside Gmail on the web and your phone, and where each one is stronger.",
+    "Kaluta is a Gmail client, not a Gmail replacement. How it fits alongside Gmail on the web and your phone, and where each one is stronger.",
 };
 
 const c: Comparison = {
   name: "Gmail",
   url: "https://mail.google.com",
   tagline:
-    "We love Gmail. OpenAGC is built on it: a native Mac client for your Gmail account, to use alongside Gmail on the web and on your phone, not instead of them.",
+    "We love Gmail. Kaluta is built on it: a native Mac client for your Gmail account, to use alongside Gmail on the web and on your phone, not instead of them.",
   intro:
-    "Everything OpenAGC does happens in your Gmail account. Labels, archive, stars, read state, drafts and the Task label all sync both ways, so what you do on your Mac shows up in the Gmail app on your phone a moment later, and the other way round. OpenAGC adds the parts Gmail does not have: your own AI agents working through approved tools, tasks from email, a writing guide learned from your sent mail, routines, Clean Up and mailboxes for your agents. Gmail keeps the parts it does best: being everywhere, search across everything, spam filtering, and Gemini for anyone who wants it.",
+    "Everything Kaluta does happens in your Gmail account. Labels, archive, stars, read state, drafts and the Task label all sync both ways, so what you do on your Mac shows up in the Gmail app on your phone a moment later, and the other way round. Kaluta adds the parts Gmail does not have: your own AI agents working through approved tools, tasks from email, a writing guide learned from your sent mail, routines, Clean Up and mailboxes for your agents. Gmail keeps the parts it does best: being everywhere, search across everything, spam filtering, and Gemini for anyone who wants it.",
   checked: "8 October 2026",
   rows: [
     {
@@ -32,13 +32,13 @@ const c: Comparison = {
         verdict: "yes",
         text: "The same account: every archive, label, star and draft syncs back to Gmail through its API",
       },
-      other: { verdict: "yes", text: "The source of truth; everything OpenAGC does shows here" },
+      other: { verdict: "yes", text: "The source of truth; everything Kaluta does shows here" },
     },
     {
       feature: "Where your mail is processed",
       openagc: {
         verdict: "yes",
-        text: "Downloaded from Google to your Mac and kept there; no OpenAGC server. Mail an agent reads goes to your own AI provider",
+        text: "Downloaded from Google to your Mac and kept there; no Kaluta server. Mail an agent reads goes to your own AI provider",
       },
       other: { verdict: "partial", text: "On Google's servers, under Google's terms" },
     },
@@ -138,10 +138,10 @@ const c: Comparison = {
     },
   ],
   theirStrengths: [
-    "It is everywhere: any browser, Android and iOS, with nothing to build or install. OpenAGC is a Mac app.",
-    "Search across your whole mailbox, spam filtering and the account itself. OpenAGC relies on all three.",
+    "It is everywhere: any browser, Android and iOS, with nothing to build or install. Kaluta is a Mac app.",
+    "Search across your whole mailbox, spam filtering and the account itself. Kaluta relies on all three.",
     "Gemini for anyone, with the writing help free and no separate AI subscription.",
-    "Finished and supported. OpenAGC is pre-alpha.",
+    "Finished and supported. Kaluta is pre-alpha.",
   ],
   ourStrengths: [
     "Your own agents, Claude Code or Codex, working on your mail through a small set of approved tools, with your approval before anything is sent.",
@@ -151,16 +151,16 @@ const c: Comparison = {
   ],
   titleJoin: "with",
   verdictTitle: "Use both",
-  chooseLabels: { them: "Keep Gmail for", us: "Open OpenAGC for" },
+  chooseLabels: { them: "Keep Gmail for", us: "Open Kaluta for" },
   choose: {
-    them: "your phone, the browser, search across everything, and the account itself. Nothing about OpenAGC asks you to give it up.",
+    them: "your phone, the browser, search across everything, and the account itself. Nothing about Kaluta asks you to give it up.",
     us: "working through mail on your Mac with your AI agents: tasks, drafts in your voice, routines and clean-up, all synced straight back to Gmail. Be ready to build it from source for now.",
   },
   sources: [
     { label: "Gemini in Gmail (Google support)", url: "https://support.google.com/mail/answer/14199860" },
     { label: "Google AI plans and pricing", url: "https://one.google.com/about/google-ai-plans/" },
     { label: "How to use Gemini in Gmail (Google blog)", url: "https://blog.google/products/gmail/how-to-use-gemini-gmail-app/" },
-    { label: "OpenAGC specification (Gmail integration, §7)", url: "https://github.com/audiojak/openagc/blob/main/docs/SPECIFICATION.md" },
+    { label: "Kaluta specification (Gmail integration, §7)", url: "https://github.com/audiojak/openagc/blob/main/docs/SPECIFICATION.md" },
   ],
 };
 

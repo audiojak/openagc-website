@@ -18,17 +18,17 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "OpenAGC — the open-source Gmail client for AI agents",
-    template: "%s · OpenAGC",
+    default: "Kaluta — the open-source Gmail client for your AI agents",
+    template: "%s · Kaluta",
   },
   description:
     "A local-first, native macOS Gmail client: turn email into tasks, let Claude Code or Codex work through them, and sort your inbox on a schedule.",
   openGraph: {
-    title: "OpenAGC",
+    title: "Kaluta",
     description:
       "The open-source, local-first Gmail client for macOS: turn email into tasks, let your AI agents work on them, and sort mail with routines.",
     url: SITE_URL,
-    siteName: "OpenAGC",
+    siteName: "Kaluta",
     images: ["/img/hero-tasks-agent.png"],
   },
 };
@@ -43,8 +43,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <header className="border-b border-border">
           <nav className="mx-auto flex max-w-5xl items-center justify-between px-5 py-4">
             <Link href="/" className="flex items-center gap-2.5 font-semibold">
-              <Image src="/img/icon.png" alt="" width={28} height={28} />
-              OpenAGC
+              <Image
+                src="/img/kaluta-mark.png"
+                alt=""
+                width={28}
+                height={28}
+                className="dark:invert"
+              />
+              Kaluta
             </Link>
             <div className="flex items-center gap-5 whitespace-nowrap text-sm text-muted">
               <Link href="/#try" className="hover:text-foreground">
@@ -69,11 +75,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <footer className="border-t border-border text-sm text-muted">
           <div className="mx-auto flex max-w-5xl flex-col gap-2 px-5 py-8 sm:flex-row sm:justify-between">
             <p>
-              OpenAGC is MIT-licensed open source, sponsored by{" "}
+              Kaluta is MIT-licensed open source, sponsored by{" "}
               <a href="https://actual.ai" className="underline hover:text-foreground">
                 Actual AI
               </a>
-              .
+              . Named after the kaluta, a small marsupial of the Australian
+              desert. It was called OpenAGC until October 2026.
             </p>
             <div className="flex flex-wrap gap-x-5 gap-y-2">
               <Link href="/privacy" className="hover:text-foreground">

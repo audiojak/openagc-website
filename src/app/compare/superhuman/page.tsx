@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import ComparisonPage, { type Comparison } from "@/components/Comparison";
 
 export const metadata: Metadata = {
-  title: "OpenAGC vs Superhuman",
+  title: "Kaluta vs Superhuman",
   description:
-    "How OpenAGC compares with Superhuman Mail: AI features, agents and MCP, where your mail is processed, platforms and price.",
+    "How Kaluta compares with Superhuman Mail: AI features, agents and MCP, where your mail is processed, platforms and price.",
 };
 
 const c: Comparison = {
   name: "Superhuman",
   url: "https://superhuman.com/mail",
   tagline:
-    "Both are AI email clients. Superhuman Mail is a polished, hosted, subscription product for Gmail and Outlook on every platform; OpenAGC is a free, open-source Mac client that keeps your mail local and hands the AI work to the agents you already pay for.",
+    "Both are AI email clients. Superhuman Mail is a polished, hosted, subscription product for Gmail and Outlook on every platform; Kaluta is a free, open-source Mac client that keeps your mail local and hands the AI work to the agents you already pay for.",
   intro:
-    "Superhuman Mail is the best-known fast email client: split inbox, keyboard shortcuts, follow-up reminders, snippets, read statuses and team features, with Superhuman AI drafting replies, labelling mail and answering questions about your inbox. Since 2025 it also offers a hosted MCP server so Claude, ChatGPT or Cursor can read and send your mail. OpenAGC approaches the same goal from the other side: no server of its own, no built-in model, and the agents you already use (Claude Code or Codex) working through a small set of mail tools, with your approval before anything is sent.",
+    "Superhuman Mail is the best-known fast email client: split inbox, keyboard shortcuts, follow-up reminders, snippets, read statuses and team features, with Superhuman AI drafting replies, labelling mail and answering questions about your inbox. Since 2025 it also offers a hosted MCP server so Claude, ChatGPT or Cursor can read and send your mail. Kaluta approaches the same goal from the other side: no server of its own, no built-in model, and the agents you already use (Claude Code or Codex) working through a small set of mail tools, with your approval before anything is sent.",
   checked: "8 October 2026",
   rows: [
     {
@@ -58,7 +58,7 @@ const c: Comparison = {
       feature: "AI model",
       openagc: {
         verdict: "yes",
-        text: "The agents you already use, Claude Code or Codex, under your own login. OpenAGC never sees your AI credentials",
+        text: "The agents you already use, Claude Code or Codex, under your own login. Kaluta never sees your AI credentials",
       },
       other: { verdict: "yes", text: "Superhuman AI, built in; opt-in, with its own LLM providers" },
     },
@@ -145,13 +145,13 @@ const c: Comparison = {
     },
   ],
   theirStrengths: [
-    "Every platform, Gmail and Outlook, with a finished, fast, keyboard-first client. OpenAGC is Gmail on a Mac and still pre-alpha.",
+    "Every platform, Gmail and Outlook, with a finished, fast, keyboard-first client. Kaluta is Gmail on a Mac and still pre-alpha.",
     "Team features: shared threads, comments, shared snippets, read statuses and analytics.",
     "Calendar built in, and a hosted MCP that works from Claude or ChatGPT on any device with nothing installed.",
-    "One subscription covers the AI; OpenAGC needs a Claude Code or Codex login of your own.",
+    "One subscription covers the AI; Kaluta needs a Claude Code or Codex login of your own.",
   ],
   ourStrengths: [
-    "Your mail stays on your Mac. There is no OpenAGC server, no account and no telemetry; Superhuman's AI and MCP run on its servers.",
+    "Your mail stays on your Mac. There is no Kaluta server, no account and no telemetry; Superhuman's AI and MCP run on its servers.",
     "Free and open source: you can read exactly what the agent is allowed to do, and the permission engine is the only path to your mail.",
     "Agents you already use: Claude Code or Codex, with your existing login and plan, and a local MCP server rather than a hosted one.",
     "Features Superhuman does not have: tasks from email, a writing guide learned from your sent mail with evidence you can see, routines that run in Claude's cloud, Clean Up, and mailboxes of their own for your agents.",
@@ -167,7 +167,7 @@ const c: Comparison = {
     { label: "Superhuman Mail MCP Server (help centre)", url: "https://help.superhuman.com/hc/en-us/articles/49810745762067" },
     { label: "Superhuman AI overview (data handling)", url: "https://help.superhuman.com/hc/en-us/articles/38456908110227" },
     { label: "Download Superhuman Mail (platforms)", url: "https://help.superhuman.com/hc/en-us/articles/38456031956243" },
-    { label: "OpenAGC specification", url: "https://github.com/audiojak/openagc/blob/main/docs/SPECIFICATION.md" },
+    { label: "Kaluta specification", url: "https://github.com/audiojak/openagc/blob/main/docs/SPECIFICATION.md" },
   ],
 };
 

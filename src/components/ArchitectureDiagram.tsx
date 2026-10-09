@@ -107,10 +107,10 @@ function Badge({ x, y, n }: { x: number; y: number; n: number }) {
 }
 
 const notes = [
-  "Mail syncs straight from Gmail to a store on your Mac. There is no OpenAGC server in between.",
+  "Mail syncs straight from Gmail to a store on your Mac. There is no Kaluta server in between.",
   "Anything that would leave your Mac — sending, forwarding, deleting — waits for your approval in the app.",
-  "Agents run in your own claude or codex CLI, under your own AI subscription, and reach your mail only through OpenAGC's tools, each call checked by the permission engine.",
-  "Cloud routines are created through your own Claude login and sort mail with Claude's Gmail connector. OpenAGC sees the result on its next sync.",
+  "Agents run in your own claude or codex CLI, under your own AI subscription, and reach your mail only through Kaluta's tools, each call checked by the permission engine.",
+  "Cloud routines are created through your own Claude login and sort mail with Claude's Gmail connector. Kaluta sees the result on its next sync.",
 ];
 
 export default function ArchitectureDiagram() {
@@ -123,11 +123,11 @@ export default function ArchitectureDiagram() {
           role="img"
           aria-labelledby="arch-title arch-desc"
         >
-          <title id="arch-title">How OpenAGC works</title>
+          <title id="arch-title">How Kaluta works</title>
           <desc id="arch-desc">
-            Gmail syncs to a local store inside OpenAGC on your Mac. You use the
+            Gmail syncs to a local store inside Kaluta on your Mac. You use the
             mail app. Agents in your claude or codex CLI reach mail through
-            OpenAGC&apos;s mail tools, which a permission engine checks; actions
+            Kaluta&apos;s mail tools, which a permission engine checks; actions
             that leave your Mac ask for your approval. Cloud routines run in
             Claude&apos;s cloud and use Claude&apos;s Gmail connector.
           </desc>
@@ -152,10 +152,10 @@ export default function ArchitectureDiagram() {
             Your Mac
           </text>
 
-          {/* OpenAGC.app */}
+          {/* Kaluta.app */}
           <rect x={50} y={240} width={750} height={495} rx={20} strokeWidth={2} className="fill-accent-soft/40 stroke-accent" />
           <text x={110} y={268} className="fill-accent text-[15px] font-semibold uppercase tracking-wider">
-            OpenAGC.app
+            Kaluta.app
           </text>
 
           <Node x={110} y={290} w={200} icon={User} title="You" sub="Triage and approve" tone="accent" />

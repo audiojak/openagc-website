@@ -19,7 +19,7 @@ const principles = [
   },
   {
     title: "Bring your own AI",
-    body: "Works with the Claude Code and Codex CLIs you already use. OpenAGC never sees your AI credentials.",
+    body: "Works with the Claude Code and Codex CLIs you already use. Kaluta never sees your AI credentials.",
   },
 ];
 
@@ -53,8 +53,8 @@ cd openagc
   },
   {
     title: "Open it with the demo mailbox",
-    code: "open build/DerivedData/Build/Products/Debug/OpenAGC.app --args -OpenAGCDemo YES",
-    note: "No agent CLI installed? Add -OpenAGCFakeAgents YES to the end to try the agent panel with a stand-in.",
+    code: "open build/DerivedData/Build/Products/Debug/Kaluta.app --args -KalutaDemo YES",
+    note: "No agent CLI installed? Add -KalutaFakeAgents YES to the end to try the agent panel with a stand-in.",
   },
 ];
 
@@ -91,7 +91,7 @@ export default function Home() {
       <section className="mx-auto max-w-5xl px-5 pt-16 pb-12 text-center sm:pt-24">
         <Image
           src="/img/icon.png"
-          alt="OpenAGC app icon"
+          alt="Kaluta app icon: a kaluta, a small marsupial, drawn in black ink"
           width={96}
           height={96}
           priority
@@ -101,7 +101,7 @@ export default function Home() {
           The open-source Gmail client built for your AI agents
         </h1>
         <p className="mx-auto mt-5 max-w-2xl text-lg text-muted text-balance">
-          OpenAGC is a local-first, native macOS email client. Turn email into
+          Kaluta is a local-first, native macOS email client. Turn email into
           tasks, let Claude Code or Codex work through them, and sort your
           inbox on a schedule.
         </p>
@@ -124,7 +124,7 @@ export default function Home() {
       <section className="mx-auto max-w-6xl px-5 pb-20">
         <Shot
           src="/img/hero-tasks-agent.png"
-          alt="OpenAGC's task list next to an email, with Claude proposing a reply that waits for the user to approve or reject it"
+          alt="Kaluta's task list next to an email, with Claude proposing a reply that waits for the user to approve or reject it"
           width={1800}
           height={954}
           priority
@@ -141,7 +141,7 @@ export default function Home() {
             Try it with a demo mailbox
           </h2>
           <p className="mt-3 max-w-3xl text-muted">
-            There is no download yet, so for now you build OpenAGC from source.
+            There is no download yet, so for now you build Kaluta from source.
             The demo mailbox is made-up mail that lives only on your Mac: you
             can explore everything without connecting an account.
           </p>
@@ -208,7 +208,7 @@ export default function Home() {
           From inbox to done, with an agent at your side
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-muted">
-          Three things OpenAGC does that other mail clients don&apos;t.
+          Three things Kaluta does that other mail clients don&apos;t.
         </p>
         <div className="mt-8">
           <FeatureAnimation />
@@ -246,7 +246,7 @@ export default function Home() {
       <section id="how" className="mx-auto max-w-6xl scroll-mt-8 px-5 py-20">
         <h2 className="text-2xl font-semibold tracking-tight">How it works</h2>
         <p className="mt-3 max-w-3xl text-muted">
-          OpenAGC is a native Mac app: SwiftUI and AppKit over a Rust core. Your
+          Kaluta is a native Mac app: SwiftUI and AppKit over a Rust core. Your
           mail lives in a local database on your Mac, and the only way an agent
           reaches it is through the app&apos;s own mail tools.
         </p>
@@ -259,7 +259,7 @@ export default function Home() {
             We&apos;re looking for maintainers
           </h2>
           <p className="mt-3 max-w-3xl text-muted">
-            OpenAGC is MIT-licensed and built in the open. We&apos;re looking
+            Kaluta is MIT-licensed and built in the open. We&apos;re looking
             for people who want to help run it: reviewing pull requests,
             triaging issues, and owning parts of the app. It&apos;s a Swift
             (SwiftUI and AppKit) app over a Rust core, with agent integration

@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import ComparisonPage, { type Comparison } from "@/components/Comparison";
 
 export const metadata: Metadata = {
-  title: "OpenAGC vs Mailstrom",
+  title: "Kaluta vs Mailstrom",
   description:
-    "How OpenAGC's Clean Up compares with Mailstrom for clearing a crowded inbox: grouping, unsubscribe, undo, privacy and price.",
+    "How Kaluta's Clean Up compares with Mailstrom for clearing a crowded inbox: grouping, unsubscribe, undo, privacy and price.",
 };
 
 const c: Comparison = {
   name: "Mailstrom",
   url: "https://mailstrom.co",
   tagline:
-    "Both clear a crowded inbox by the thousand. Mailstrom is a paid web service that does it for any IMAP mailbox; OpenAGC does it inside a free, open-source Mac mail client that also reads, writes and runs your AI agents.",
+    "Both clear a crowded inbox by the thousand. Mailstrom is a paid web service that does it for any IMAP mailbox; Kaluta does it inside a free, open-source Mac mail client that also reads, writes and runs your AI agents.",
   intro:
-    "Mailstrom is a bulk clean-up tool: it connects to your mailbox over IMAP, groups mail by sender, subject, date, size and list, and lets you delete, archive, move, unsubscribe or block in one go, with standing rules to keep the inbox clear. OpenAGC's Clean Up window does the same grouping and bulk actions, but it is one part of a full email client. The rest of OpenAGC (tasks, agents, a writing guide, routines) has no counterpart in Mailstrom, and Mailstrom's Block, Chill and Expire have no exact counterpart in OpenAGC yet.",
+    "Mailstrom is a bulk clean-up tool: it connects to your mailbox over IMAP, groups mail by sender, subject, date, size and list, and lets you delete, archive, move, unsubscribe or block in one go, with standing rules to keep the inbox clear. Kaluta's Clean Up window does the same grouping and bulk actions, but it is one part of a full email client. The rest of Kaluta (tasks, agents, a writing guide, routines) has no counterpart in Mailstrom, and Mailstrom's Block, Chill and Expire have no exact counterpart in Kaluta yet.",
   checked: "8 October 2026",
   rows: [
     {
@@ -35,7 +35,7 @@ const c: Comparison = {
       feature: "Where your mail is processed",
       openagc: {
         verdict: "yes",
-        text: "On your Mac only. No OpenAGC server exists; the project has no accounts and no telemetry",
+        text: "On your Mac only. No Kaluta server exists; the project has no accounts and no telemetry",
       },
       other: {
         verdict: "partial",
@@ -113,16 +113,16 @@ const c: Comparison = {
     },
   ],
   theirStrengths: [
-    "Works with any IMAP mailbox and from any browser; OpenAGC is Gmail on a Mac.",
+    "Works with any IMAP mailbox and from any browser; Kaluta is Gmail on a Mac.",
     "Block, Chill and Expire: standing actions that keep a sender or subject out of the inbox, or bring mail back later.",
-    "A mature, supported product with a free trial you can start in a minute. OpenAGC has no release yet.",
+    "A mature, supported product with a free trial you can start in a minute. Kaluta has no release yet.",
     "Scans an inbox without downloading it to your machine.",
   ],
   ourStrengths: [
     "Your mail never leaves your Mac. Mailstrom reads it over IMAP from its servers and keeps metadata there.",
     "Free and open source, with no account and no subscription.",
     "Clean Up lives inside your mail client, so the tidy-up and the daily reading are one app, one undo stack.",
-    "The rest of OpenAGC: turn email into tasks, let your own AI agent work them, write in your voice, and run routines that sort mail every hour.",
+    "The rest of Kaluta: turn email into tasks, let your own AI agent work them, write in your voice, and run routines that sort mail every hour.",
   ],
   choose: {
     them: "if you need a quick, one-off clean of a non-Gmail mailbox, want it on Windows or in a browser, or rely on Block, Chill and Expire.",
@@ -133,7 +133,7 @@ const c: Comparison = {
     { label: "Mailstrom pricing", url: "https://mailstrom.co/pricing" },
     { label: "Mailstrom FAQ (IMAP, data stored, Block, Chill, Expire, trial)", url: "https://mailstrom.co/faq" },
     { label: "Mailstrom privacy policy", url: "https://mailstrom.co/privacy" },
-    { label: "OpenAGC specification (Clean Up, §14.12)", url: "https://github.com/audiojak/openagc/blob/main/docs/SPECIFICATION.md" },
+    { label: "Kaluta specification (Clean Up, §14.12)", url: "https://github.com/audiojak/openagc/blob/main/docs/SPECIFICATION.md" },
   ],
 };
 
