@@ -16,14 +16,14 @@ The product is **Kaluta** (kaluta.org), named after a small Australian
 marsupial; the logo is one, in black ink (`public/img/kaluta-mark.png`,
 the tiled app icon in `public/img/icon.png`). It was called **OpenAGC**
 until October 2026. Write "Kaluta" everywhere on the site. The app repo is
-`audiojak/kaluta`; its local checkout path, `../OpenAGC`, keeps its old
-name. The icons come from that repo: `public/img/icon.png` and the
+`audiojak/kaluta`; its local checkout is `../kaluta`, beside this one in
+`~/Code/Kaluta`. The icons come from that repo: `public/img/icon.png` and the
 favicons are its app icon (`macos/Kaluta/Resources/Assets.xcassets/
 AppIcon.appiconset`), and the header mark is `brand/Kaluta-mark.svg`;
 copy them again when the app's change. `next.config.ts` redirects the
 old host, openagc.actual.ai, to kaluta.org.
 
-This is the marketing site for Kaluta (the app lives in `../OpenAGC`),
+This is the marketing site for Kaluta (the app lives in `../kaluta`),
 served at https://kaluta.org from Vercel. Pushes to `main` deploy to
 production. Every page is static. Run `pnpm lint` and `pnpm build` before
 committing.
@@ -57,7 +57,7 @@ the architecture diagram), review every comparison page in the same change:
 3. Does the new row make a claim about the other product? Check it
    against that product's own site (home page, pricing, help centre), add
    the page to `sources`, and set the Kaluta-side wording from the spec in
-   `../OpenAGC/docs/SPECIFICATION.md`, never from memory.
+   `../kaluta/docs/SPECIFICATION.md`, never from memory.
 4. Update the `checked` date when you have re-verified the other product's
    claims; leave it alone if you only changed Kaluta's cells.
 5. If nothing changes, say so in the commit or handoff ("comparison pages
