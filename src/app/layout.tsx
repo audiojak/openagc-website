@@ -88,6 +88,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               <Link href="/compare/superhuman" className="hover:text-foreground">
                 vs Superhuman
               </Link>
+              <Link href="/compare/gmail" className="hover:text-foreground">
+                with Gmail
+              </Link>
+              <Link href="/compare/apple-mail" className="hover:text-foreground">
+                vs Apple Mail
+              </Link>
               <a href={GITHUB_URL} className="hover:text-foreground">
                 Source
               </a>

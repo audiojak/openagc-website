@@ -19,6 +19,9 @@ export type Comparison = {
   theirStrengths: string[];
   ourStrengths: string[];
   choose: { them: string; us: string };
+  /** Overrides for products used alongside OpenAGC rather than instead of it. */
+  verdictTitle?: string;
+  chooseLabels?: { them: string; us: string };
   sources: { label: string; url: string }[];
 };
 
@@ -122,12 +125,14 @@ export default function ComparisonPage({ c }: { c: Comparison }) {
 
       <section className="mx-auto max-w-5xl px-5 pb-16">
         <div className="rounded-2xl border border-border bg-surface p-6 sm:p-8">
-          <h2 className="text-xl font-semibold">Which should you pick?</h2>
+          <h2 className="text-xl font-semibold">{c.verdictTitle ?? "Which should you pick?"}</h2>
           <p className="mt-3 text-muted">
-            <strong className="text-foreground">Choose {c.name}</strong> {c.choose.them}
+            <strong className="text-foreground">{c.chooseLabels?.them ?? `Choose ${c.name}`}</strong>{" "}
+            {c.choose.them}
           </p>
           <p className="mt-3 text-muted">
-            <strong className="text-foreground">Choose OpenAGC</strong> {c.choose.us}
+            <strong className="text-foreground">{c.chooseLabels?.us ?? "Choose OpenAGC"}</strong>{" "}
+            {c.choose.us}
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link

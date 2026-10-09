@@ -21,6 +21,12 @@ The site compares OpenAGC with other products:
 
 - `src/app/compare/mailstrom/page.tsx` — OpenAGC vs Mailstrom
 - `src/app/compare/superhuman/page.tsx` — OpenAGC vs Superhuman
+- `src/app/compare/apple-mail/page.tsx` — OpenAGC vs Apple Mail
+- `src/app/compare/gmail/page.tsx` — OpenAGC with Gmail. Gmail is the
+  backend OpenAGC is built on, so this page is a "use both" comparison
+  (`verdictTitle` and `chooseLabels` override the "which should you pick"
+  wording). Keep that framing: never pitch OpenAGC as a replacement for
+  Gmail on the web or phone.
 
 They share `src/components/Comparison.tsx`. Each page is a table of rows
 (feature, OpenAGC, the other product), two lists of strengths, a
@@ -28,7 +34,7 @@ They share `src/components/Comparison.tsx`. Each page is a table of rows
 
 **Whenever a feature is added, removed or changed anywhere on the site**
 (`src/app/page.tsx`, `src/app/features/page.tsx`, the feature animation, or
-the architecture diagram), review both comparison pages in the same change:
+the architecture diagram), review every comparison page in the same change:
 
 1. Does the feature belong in the table? Add a row, or update the
    OpenAGC cell of the row it fits. A feature that the other product also

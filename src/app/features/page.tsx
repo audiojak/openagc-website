@@ -386,6 +386,14 @@ export default function Features() {
             ·{" "}
             <Link href="/compare/mailstrom" className="underline hover:text-foreground">
               OpenAGC vs Mailstrom
+            </Link>{" "}
+            ·{" "}
+            <Link href="/compare/apple-mail" className="underline hover:text-foreground">
+              OpenAGC vs Apple Mail
+            </Link>{" "}
+            ·{" "}
+            <Link href="/compare/gmail" className="underline hover:text-foreground">
+              OpenAGC with Gmail
             </Link>
           </p>
         </div>
